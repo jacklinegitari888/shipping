@@ -1,6 +1,7 @@
-from .views import hello
+from .views import get_time, hello
 from django.urls import path
 
 urlpatterns = [
-   path("",hello) 
+   path("",hello),
+   path("time/",get_time)
 ]
