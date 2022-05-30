@@ -14,7 +14,7 @@ class Question(models.Model):
         return self.pub_date>=timezone.now() -datetime.timedelta(days=1)
     
     
-class choice(models.Model):
+class Choice(models.Model):
     def __srt__(self):
         return self.choice_text
     question=models.ForeignKey(Question,on_delete=models.CASCADE)
